@@ -33,13 +33,12 @@ from telethon.tl.types import (
 
 API_ID = 21991530
 API_HASH = "6fedb4494836743356f1624c1e6377ae"
-BOT_TOKEN = "توکن "
-SUPPORT_USERNAME = "@Nullo_404"
-OWNER_IDS = [8806549778,7172066915,7248348866]
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+SUPPORT_USERNAME = "@VARONII"
+OWNER_IDS = [8835193565]
 
 # ====== گروه گزارشات ======
-REPORT_GROUP_ID = آیدی عددی گروه گزارشات#
-
+REPORT_GROUP_ID = int(os.getenv("REPORT_GROUP_ID", "0"))
 DATA_FILE = "datadfasr.json"
 ADMIN_SESSIONS_DIR = "admin_sessiorns1"
 ACTIVE_OPERATIONS = {}
